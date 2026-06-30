@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+  ARQUIVO: projetos.html
+  Galeria de projetos com filtro interativo por categoria,
+  controlado via JavaScript (ver js/script.js).
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos | Marina Rocha — Desenvolvedora Front-End</title>
+<meta name="description" content="Conheça os principais projetos de Marina Rocha: sites, sistemas e interfaces desenvolvidos com HTML5, CSS3, JavaScript, React e Bootstrap.">
+<meta name="keywords" content="projetos front-end, portfólio de sites, react, bootstrap, javascript">
+<meta name="author" content="Marina Rocha">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://marinarocha.dev/projetos.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho com menu de navegação (idêntico em todas as páginas) -->
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="logo">marina<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html" class="active">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">modo-claro()</button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">portfólio</p>
+      <h1>Projetos selecionados</h1>
+      <p class="lead" style="max-width:60ch;">Uma seleção de trabalhos que combinam design responsivo, código limpo e boas práticas de front-end.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <!-- Botões de filtro: o atributo data-filter define a categoria -->
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="todos" type="button">Todos</button>
+        <button class="filter-btn" data-filter="sites" type="button">Sites</button>
+        <button class="filter-btn" data-filter="apps" type="button">Aplicações</button>
+        <button class="filter-btn" data-filter="lojas" type="button">Lojas virtuais</button>
+      </div>
+
+      <!-- Grade de projetos: cada cartão tem um data-category correspondente -->
+      <div class="projects-grid">
+        <article class="project-card" data-category="sites">
+          <div class="project-thumb">&lt;/&gt; site institucional</div>
+          <div class="project-body">
+            <h3>Portal Verde Vida</h3>
+            <p>Site institucional responsivo para ONG ambiental, com formulário de doações e SEO básico.</p>
+            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="lojas">
+          <div class="project-thumb">&lt;/&gt; loja virtual</div>
+          <div class="project-body">
+            <h3>Loja Café & Cia</h3>
+            <p>Loja virtual simplificada de cafés especiais com carrinho dinâmico em JavaScript.</p>
+            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="apps">
+          <div class="project-thumb">&lt;/&gt; dashboard</div>
+          <div class="project-body">
+            <h3>Painel de Tarefas</h3>
+            <p>Aplicação de gestão de tarefas com componentes em React e filtros interativos.</p>
+            <div class="project-tags"><span>React</span><span>JavaScript</span><span>CSS3</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="sites">
+          <div class="project-thumb">&lt;/&gt; blog pessoal</div>
+          <div class="project-body">
+            <h3>Blog Vida Front-End</h3>
+            <p>Blog responsivo sobre tecnologia, com layout em grid e tipografia otimizada para leitura.</p>
+            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>jQuery</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="apps">
+          <div class="project-thumb">&lt;/&gt; calculadora</div>
+          <div class="project-body">
+            <h3>Calculadora de Orçamento</h3>
+            <p>Ferramenta interativa para cálculo de orçamento mensal com validação de campos.</p>
+            <div class="project-tags"><span>JavaScript</span><span>CSS3</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="lojas">
+          <div class="project-thumb">&lt;/&gt; e-commerce</div>
+          <div class="project-body">
+            <h3>Studio Cerâmica Bela</h3>
+            <p>Catálogo de produtos artesanais com filtros por categoria e efeitos de hover.</p>
+            <div class="project-tags"><span>HTML5</span><span>Bootstrap</span><span>JavaScript</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Rodapé com copyright e links sociais -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© <span id="current-year"></span> Marina Rocha — Todos os direitos reservados.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

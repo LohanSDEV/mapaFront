@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+  ARQUIVO: sobre.html
+  Página com a apresentação pessoal e a linha do tempo de
+  formação e experiência profissional.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre | Marina Rocha — Desenvolvedora Front-End</title>
+<meta name="description" content="Conheça a trajetória, formação e experiência profissional de Marina Rocha, desenvolvedora Front-End especializada em HTML, CSS e JavaScript.">
+<meta name="keywords" content="sobre, trajetória profissional, desenvolvedora front-end, experiência">
+<meta name="author" content="Marina Rocha">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://marinarocha.dev/sobre.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho com menu de navegação (idêntico em todas as páginas) -->
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="logo">marina<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html" class="active">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">modo-claro()</button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Bloco de introdução da página "Sobre" -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">sobre mim</p>
+      <h1>Uma desenvolvedora apaixonada por detalhes.</h1>
+      <p class="lead" style="max-width:60ch;">Há mais de quatro anos transformo protótipos em interfaces reais, sempre buscando o equilíbrio entre boa experiência de uso, performance e código organizado.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container hero-grid">
+      <div class="reveal">
+        <h2>Minha história</h2>
+        <p>Comecei na área editando templates simples e, com o tempo, me aprofundei em HTML5, CSS3 e JavaScript até me especializar em interfaces responsivas. Hoje trabalho com bibliotecas como React e frameworks como Bootstrap para acelerar a entrega de produtos digitais.</p>
+        <p>Acredito que um bom front-end nasce da combinação entre acessibilidade, performance e atenção aos pequenos detalhes visuais — como espaçamentos, contraste e microinterações.</p>
+      </div>
+      <div class="window-frame reveal">
+        <div class="window-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="window-title">valores.css</span>
+        </div>
+        <div class="code-block">.princípios {
+  acessibilidade: <span class="str">"sempre"</span>;
+  performance: <span class="str">"prioridade"</span>;
+  código: <span class="str">"limpo e comentado"</span>;
+  aprendizado: <span class="str">"contínuo"</span>;
+}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha do tempo com formação e experiência profissional -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">trajetória</p>
+        <h2>Formação e experiência</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <p class="when">2024 — atual</p>
+          <h3>Desenvolvedora Front-End Pleno</h3>
+          <p>Atuação em projetos de e-commerce e portais institucionais, com foco em performance e SEO técnico.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="when">2022 — 2024</p>
+          <h3>Desenvolvedora Front-End Júnior</h3>
+          <p>Construção de landing pages e componentes reutilizáveis com HTML, CSS, JavaScript e Bootstrap.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <p class="when">2021 — 2022</p>
+          <h3>Curso Técnico em Programação Front-End</h3>
+          <p>Formação prática com foco em HTML5, CSS3, JavaScript, jQuery, React e boas práticas de UI/UX.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Rodapé com copyright e links sociais -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© <span id="current-year"></span> Marina Rocha — Todos os direitos reservados.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

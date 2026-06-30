@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+  ARQUIVO: index.html
+  Página inicial do portfólio. Compartilha o mesmo header,
+  footer, style.css e script.js das demais páginas do site.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título e metadados de SEO específicos desta página -->
+<title>Marina Rocha | Desenvolvedora Front-End</title>
+<meta name="description" content="Portfólio de Marina Rocha, desenvolvedora Front-End especializada em HTML5, CSS3, JavaScript, React e Bootstrap. Veja projetos, habilidades e formas de contato.">
+<meta name="keywords" content="front-end, desenvolvedora front-end, portfolio, html5, css3, javascript, react, bootstrap">
+<meta name="author" content="Marina Rocha">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://marinarocha.dev/index.html">
+
+<meta property="og:title" content="Marina Rocha | Desenvolvedora Front-End">
+<meta property="og:description" content="Portfólio com projetos, habilidades e contato de uma desenvolvedora Front-End.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Dados estruturados (SEO) informando ao buscador quem é o autor do site -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Marina Rocha",
+  "jobTitle": "Desenvolvedora Front-End",
+  "url": "https://marinarocha.dev/index.html"
+}
+</script>
+</head>
+<body>
+
+<!-- Cabeçalho com logo, menu de navegação e botões de tema/menu mobile -->
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="logo">marina<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">modo-claro()</button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Seção hero: apresentação principal + bloco de código estilizado -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal in-view">
+        <p class="eyebrow">desenvolvedora front-end</p>
+        <h1>Eu construo interfaces que <span class="accent">funcionam</span> e <span class="accent">parecem</span> certas.</h1>
+        <p class="lead">Olá, sou Marina. Transformo layouts e ideias em sites responsivos, acessíveis e rápidos, usando HTML5, CSS3, JavaScript e bibliotecas como React e Bootstrap.</p>
+        <div class="hero-actions">
+          <a href="projetos.html" class="btn btn-primary">ver projetos →</a>
+          <a href="contato.html" class="btn btn-ghost">falar comigo</a>
+        </div>
+      </div>
+      <div class="reveal in-view window-frame">
+        <div class="window-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="window-title">perfil.js</span>
+        </div>
+        <div class="code-block"><span class="com">// quem está por trás do código</span>
+<span class="tag">const</span> dev = {
+  nome: <span class="str">"Marina Rocha"</span>,
+  papel: <span class="str">"Front-End Developer"</span>,
+  stack: [<span class="str">"HTML5"</span>, <span class="str">"CSS3"</span>, <span class="str">"JavaScript"</span>, <span class="str">"React"</span>, <span class="str">"Bootstrap"</span>],
+  foco: <span class="str">"interfaces responsivas"</span>,
+  disponivel: <span class="tag">true</span>
+};</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de habilidades técnicas, com barras de progresso animadas -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">o que eu faço</p>
+        <h2>Da estrutura ao polimento final</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <h3>&lt;HTML5/&gt;</h3>
+          <p>Marcação semântica, acessível e otimizada para SEO desde a base do documento.</p>
+          <div class="bar"><div class="bar-fill" data-level="92"></div></div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>CSS3</h3>
+          <p>Layouts responsivos com Flexbox e Grid, animações e variáveis de design.</p>
+          <div class="bar"><div class="bar-fill" data-level="88"></div></div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>JavaScript</h3>
+          <p>Interatividade, validação de formulários e manipulação dinâmica do DOM.</p>
+          <div class="bar"><div class="bar-fill" data-level="85"></div></div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>React &amp; Bootstrap</h3>
+          <p>Componentização de interfaces e prototipagem rápida com frameworks modernos.</p>
+          <div class="bar"><div class="bar-fill" data-level="78"></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chamada para ação final, direcionando para a página de contato -->
+  <section>
+    <div class="container">
+      <div class="window-frame reveal">
+        <div class="window-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="window-title">cta.html</span>
+        </div>
+        <div style="padding:36px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;">
+          <div>
+            <p class="eyebrow">pronto para começar?</p>
+            <h2 style="margin-bottom:0;">Vamos construir algo juntos.</h2>
+          </div>
+          <a href="contato.html" class="btn btn-primary">enviar mensagem →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Rodapé com copyright e links sociais, igual em todas as páginas -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© <span id="current-year"></span> Marina Rocha — Todos os direitos reservados.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+  ARQUIVO: contato.html
+  Formulário de contato com validação via JavaScript
+  (ver função de validação em js/script.js) e informações
+  alternativas de contato.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato | Marina Rocha — Desenvolvedora Front-End</title>
+<meta name="description" content="Entre em contato com Marina Rocha para propostas de projetos front-end, freelas ou oportunidades de trabalho.">
+<meta name="keywords" content="contato, falar com desenvolvedora, orçamento front-end">
+<meta name="author" content="Marina Rocha">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://marinarocha.dev/contato.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho com menu de navegação (idêntico em todas as páginas) -->
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="logo">marina<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">modo-claro()</button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">contato</p>
+      <h1>Vamos conversar sobre seu projeto?</h1>
+      <p class="lead" style="max-width:60ch;">Preencha o formulário abaixo ou utilize um dos canais diretos. Normalmente respondo em até dois dias úteis.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-grid">
+      <div class="window-frame reveal">
+        <div class="window-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="window-title">contato.html</span>
+        </div>
+        <div style="padding:28px;">
+          <!--
+            Formulário de contato.
+            id="contact-form" é usado pelo script.js para
+            interceptar o envio e validar os campos antes
+            de exibir a mensagem de status.
+          -->
+          <form id="contact-form" class="contact-form" novalidate>
+            <!-- Campo: nome completo -->
+            <div class="field" data-field="name">
+              <label for="name">Nome completo</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome">
+              <span class="msg"></span>
+            </div>
+            <!-- Campo: e-mail (validado via expressão regular no JS) -->
+            <div class="field" data-field="email">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com">
+              <span class="msg"></span>
+            </div>
+            <!-- Campo: assunto -->
+            <div class="field" data-field="subject">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Sobre o que você quer falar?">
+              <span class="msg"></span>
+            </div>
+            <!-- Campo: mensagem -->
+            <div class="field" data-field="message">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre o seu projeto..."></textarea>
+              <span class="msg"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">enviar mensagem →</button>
+            <!-- Mensagem de sucesso/erro exibida após a tentativa de envio -->
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Canais alternativos de contato -->
+      <div class="reveal">
+        <h2>Outros canais</h2>
+        <ul class="info-list">
+          <li><span class="k">e-mail</span><span>contato@marinarocha.dev</span></li>
+          <li><span class="k">telefone</span><span>(48) 99999-0000</span></li>
+          <li><span class="k">local</span><span>Florianópolis, SC — atendimento remoto</span></li>
+          <li><span class="k">github</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/marinarocha</a></li>
+          <li><span class="k">linkedin</span><a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/marinarocha</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Rodapé com copyright e links sociais -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© <span id="current-year"></span> Marina Rocha — Todos os direitos reservados.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
